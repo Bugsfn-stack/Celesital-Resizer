@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${description}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contact": {
+    "homepage": "https://infernalstudios.org/",
+    "sources": "https://github.com/infernalstudios/Celestial-Configuration"
+  },
+  "license": "${license}",
+  "icon": "${mod_id}.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.infernalstudios.celesteconfig.CelestialConfiguration"
+    ],
+    "modmenu": [
+      "org.infernalstudios.celesteconfig.config.CelestialModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "${mod_id}.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=${java_version}"
+  }
+}
+  
